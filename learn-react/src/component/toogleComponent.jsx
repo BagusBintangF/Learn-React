@@ -23,4 +23,4 @@ class ToogleComponent extends React.Component{
     }
 } 
 
-export default ToogleComponent
+export default ToogleComponent;

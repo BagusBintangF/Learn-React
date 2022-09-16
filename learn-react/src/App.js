@@ -4,6 +4,7 @@ import Welcome from './component/statelessComponent';
 import Clock from './component/statefullComponent';
 import EventHamdler from './component/eventHamdler';
 import ToogleComponent from './component/toogleComponent';
+import LoggingButton from './component/loggingButton';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Clock />
         <EventHamdler/>
         <ToogleComponent/>
+        <LoggingButton/>
     </div>
   );
 }
