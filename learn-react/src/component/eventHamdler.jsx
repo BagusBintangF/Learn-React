@@ -1,6 +1,6 @@
 import React from 'react';
 
-function eventHamdler(){
+function EventHamdler(){
   function handleSubmit(e){
     e.preventDefault();
     console.log('You Clicked the submit button');
@@ -13,4 +13,4 @@ function eventHamdler(){
   );
 }
 
-export default eventHamdler;
+export default EventHamdler;
