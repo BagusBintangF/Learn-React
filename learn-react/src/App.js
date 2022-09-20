@@ -5,6 +5,8 @@ import Clock from './component/statefullComponent';
 import EventHamdler from './component/eventHamdler';
 import ToogleComponent from './component/toogleComponent';
 import LoggingButton from './component/loggingButton';
+import {UserGreeting, GuestGreeting, Greeting} from './component/ConditionalRendering'
+
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <EventHamdler/>
         <ToogleComponent/>
         <LoggingButton/>
+        <UserGreeting />
+        <GuestGreeting/>
+        <Greeting isLoggedIn={true} />
     </div>
   );
 }
