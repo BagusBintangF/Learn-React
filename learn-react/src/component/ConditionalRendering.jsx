@@ -11,10 +11,10 @@ function GuestGreeting(props){
 function Greeting(props){
     const isLoggedIn = props.isLoggedIn;
     if(isLoggedIn){
-        return <UserGreeting/>
+        return <UserGreeting/>;
     }
 
-    return <GuestGreeting/>
+    return <GuestGreeting/>;
 }
 
 export {Greeting, UserGreeting, GuestGreeting};

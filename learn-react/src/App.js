@@ -6,6 +6,7 @@ import EventHamdler from './component/eventHamdler';
 import ToogleComponent from './component/toogleComponent';
 import LoggingButton from './component/loggingButton';
 import {UserGreeting, GuestGreeting, Greeting} from './component/ConditionalRendering'
+import {LoginButton, LogoutButton, LoginControl} from './component/ElementVariable'
 
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
         <UserGreeting />
         <GuestGreeting/>
         <Greeting isLoggedIn={true} />
+        <LoginButton/>
+        <LogoutButton/>
+        <LoginControl/>
     </div>
   );
 }
