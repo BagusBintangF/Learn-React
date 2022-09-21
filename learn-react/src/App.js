@@ -7,7 +7,9 @@ import ToogleComponent from './component/toogleComponent';
 import LoggingButton from './component/loggingButton';
 import {UserGreeting, GuestGreeting, Greeting} from './component/ConditionalRendering'
 import {LoginButton, LogoutButton, LoginControl} from './component/ElementVariable'
+import LogicalOperator from './component/LogicalOperator';
 
+const messages = ['React', 'Re : React', 'Re: Re: React'];
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <LoginButton/>
         <LogoutButton/>
         <LoginControl/>
+        <LogicalOperator unreadMessages={messages}/>
     </div>
   );
 }
