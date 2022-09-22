@@ -8,8 +8,11 @@ import {UserGreeting, GuestGreeting, Greeting} from './component/ConditionalRend
 import {LoginButton, LogoutButton, LoginControl} from './component/ElementVariable'
 import LogicalOperator from './component/LogicalOperator';
 import PreventRendering from './component/PreventRendering';
+import ListComponent from './component/ListComponent';
+import NumberList from './component/KeyUsage';
 
 const messages = ['React'];
+const numbers = [1,2,3,4,5,6]
 
 function App() {
   return (
@@ -29,6 +32,8 @@ function App() {
         <LoginControl/>
         <LogicalOperator unreadMessages={messages}/>
         <PreventRendering/>
+        <ListComponent numbers={numbers}/>
+        <NumberList numbers={numbers}/>
     </div>
   );
 }
