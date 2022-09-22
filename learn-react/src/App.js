@@ -10,9 +10,14 @@ import LogicalOperator from './component/LogicalOperator';
 import PreventRendering from './component/PreventRendering';
 import ListComponent from './component/ListComponent';
 import NumberList from './component/KeyUsage';
+import Blog from './component/UniqueKey';
 
 const messages = ['React'];
 const numbers = [1,2,3,4,5,6]
+const posts=[
+  {id:1, title:'Hello World', content:'Welcome to learning React!'},
+  {id:2, title:'Instalation', content:'Youcan install react from npm'}
+];
 
 function App() {
   return (
@@ -34,6 +39,7 @@ function App() {
         <PreventRendering/>
         <ListComponent numbers={numbers}/>
         <NumberList numbers={numbers}/>
+        <Blog posts={posts} />
     </div>
   );
 }
