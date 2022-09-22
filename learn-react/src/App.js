@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Welcome from './component/statelessComponent';
 import Clock from './component/statefullComponent';
@@ -8,8 +7,9 @@ import LoggingButton from './component/loggingButton';
 import {UserGreeting, GuestGreeting, Greeting} from './component/ConditionalRendering'
 import {LoginButton, LogoutButton, LoginControl} from './component/ElementVariable'
 import LogicalOperator from './component/LogicalOperator';
+import PreventRendering from './component/PreventRendering';
 
-const messages = ['React', 'Re : React', 'Re: Re: React'];
+const messages = ['React'];
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
         <LogoutButton/>
         <LoginControl/>
         <LogicalOperator unreadMessages={messages}/>
+        <PreventRendering/>
     </div>
   );
 }
