@@ -12,7 +12,6 @@ function WarningBanner(props){
     );
 }
 
-
 class PreventRendering extends React.Component {
     constructor(props){
         super(props);
